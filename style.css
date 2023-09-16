@@ -13,3 +13,63 @@ header{
     background-size: cover;
 
 }
+.main-headline{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: #d4d6d5; */
+    /* color: #caac8a; */
+    color: #232324d8;
+    padding-top: 10rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  
+}
+
+.heading2{
+    color: #232324d8;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1rem;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+.form-todo-section{
+    margin: 2rem 1rem;
+    background-color: #d8dadd8d;
+}
+.form-container{
+    /* margin-top: 2rem; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container input[type = "text"]{
+    padding: 0.8rem;
+    margin: 1rem;
+    width: 60%;
+    border: none;
+    
+}
+input::placeholder{
+    font-size: 1.2rem;
+}
+.btn{
+   
+   padding: .8rem; 
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   cursor: pointer;
+   background-color: #dbbc98c9;
+   font-size: 1rem;
+   font-weight: bold;
+   border: none;
+   
+}
+.btn:hover{
+    background-color: #c6a68239;
+}
