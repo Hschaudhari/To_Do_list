@@ -117,10 +117,10 @@ li{
     align-items: center;
     list-style-type: none;
 }
-.li-item input[type = "text"]{
-    
+.li-item .text{
+    background-color: #fff;
    border-radius: 5px;
-    padding: 0.8rem;
+    padding: 1.3rem;
     margin: 1rem;
     width: 60%;
     border: none;
