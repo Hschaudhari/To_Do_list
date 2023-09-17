@@ -38,6 +38,10 @@ header{
     margin: auto;
 }
 
+
+
+
+/* Form Stylling */
 .form-todo-section{
     margin: 2rem 1rem;
     background-color: #d8dadd8d;
@@ -54,13 +58,14 @@ header{
     margin: 1rem;
     width: 60%;
     border: none;
+    border-radius: 5px;
     
 }
 input::placeholder{
     font-size: 1.2rem;
 }
 .btn{
-   
+   margin: .3rem;
    padding: .8rem; 
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    cursor: pointer;
@@ -68,12 +73,13 @@ input::placeholder{
    font-size: 1rem;
    font-weight: bold;
    border: none;
+   border-radius: 5px;
    
 }
 .btn:hover{
     background-color: #c6a68239;
 }
-.form-signUp-section{
+/* .form-signUp-section{
     margin: 2rem 1rem;
     background-color: #d8dadd8d;
 }
@@ -98,4 +104,32 @@ input::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+} */
+
+
+/* Adding task stylling */
+
+
+li{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
+.li-item input[type = "text"]{
+    
+   border-radius: 5px;
+    padding: 0.8rem;
+    margin: 1rem;
+    width: 60%;
+    border: none;
+    
+}
+
+li{
+    margin-left: 2.5rem;
+}
+/* .li-btn1{
+    margin-right: .5rem;
+} */
