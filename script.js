@@ -1,72 +1,29 @@
-const addBtn = document.querySelector(".add-btn");
-const input = document.querySelector(".form-container input[type = 'text']");
-const ul = document.querySelector(".li-item")
-const doneBtn = document.querySelector(".li-btn1"); 
-const removeBtn = document.querySelector(".li-btn2");
-// console.log(doneBtn)
+const addBtn = document.querySelector(".btn");
+const input = document.querySelector(".form-todo input[type = 'text']");
+const ul = document.querySelector(".li-item");
+
 
 addBtn.addEventListener("click",(e)=>{
     e.preventDefault();
-    const newInput = input.value;
+    const inputValue = input.value;
     input.value = "";
     const liItem = document.createElement("li");
-    const newInnerHtml = `<span class="text">${newInput}</span>
+    const liInnerHtml = `<span class="text">${inputValue}</span>
     <div>
-        <button class="btn li-btn1">Done</button>
-        <button class="btn li-btn2">Remove</button>
-    </div>`;
-
-    liItem.innerHTML = newInnerHtml;
+        <button class="btn done li-btn1">Done</button>
+        <button class="btn remove li-btn2">Remove</button>
+    </div>`
+    liItem.innerHTML = liInnerHtml;
     ul.append(liItem);
-    
-   
-  
-});
-
-
-ul.addEventListener("click", (e)=>{
-
-   if(e.target.classList.contains("done")){
+})
+ul.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("li-btn1")){
         const liSpan = e.target.parentNode.previousElementSibling;
         liSpan.style.textDecoration = "line-through";
+     
+    }
 
-   }
-        
-   if(e.target.classList.contains("remove")){
-    const targetLi = e.target.parentNode.parentNode;
-    targetLi.remove();
-
-}
+    if(e.target.classList.contains("li-btn2")){
+        e.target.parentNode.parentNode.remove();
+    }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
